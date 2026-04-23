@@ -9,8 +9,21 @@ export interface FetchOptions {
 }
 
 interface TimelineEntry {
-  formattedAxisTime: string;
+  time?: string;
+  formattedAxisTime?: string;
   value: number[];
+}
+
+function toYearMonth(entry: TimelineEntry): string | null {
+  if (entry.time) {
+    const seconds = Number(entry.time);
+    if (Number.isFinite(seconds)) {
+      return new Date(seconds * 1000).toISOString().slice(0, 7);
+    }
+  }
+  const f = entry.formattedAxisTime;
+  if (f && /^\d{4}-\d{2}-\d{2}/.test(f)) return f.slice(0, 7);
+  return null;
 }
 
 export async function fetchInterestOverTime(
@@ -33,16 +46,14 @@ export async function fetchInterestOverTime(
   const parsed = JSON.parse(raw) as { default?: { timelineData?: TimelineEntry[] } };
   const timeline = parsed.default?.timelineData ?? [];
 
-  const perSample = timeline.map((e) => ({
-    month: e.formattedAxisTime.slice(0, 7),
-    score: e.value.reduce((s, v) => s + v, 0) / Math.max(1, e.value.length),
-  }));
-
   const buckets = new Map<string, number[]>();
-  for (const s of perSample) {
-    const arr = buckets.get(s.month) ?? [];
-    arr.push(s.score);
-    buckets.set(s.month, arr);
+  for (const e of timeline) {
+    const month = toYearMonth(e);
+    if (!month) continue;
+    const score = e.value.reduce((s, v) => s + v, 0) / Math.max(1, e.value.length);
+    const arr = buckets.get(month) ?? [];
+    arr.push(score);
+    buckets.set(month, arr);
   }
 
   return [...buckets.entries()]
