@@ -2,10 +2,16 @@
 import { scaleLinear, scaleTime } from '@visx/scale';
 import { Group } from '@visx/group';
 import { AreaStack } from '@visx/shape';
+import { AxisBottom } from '@visx/axis';
 import { ParentSize } from '@visx/responsive';
 import { useTooltip, TooltipWithBounds } from '@visx/tooltip';
+import { timeYear } from 'd3-time';
 import { useMemo } from 'react';
 import type { MindshareSeries, Narrative } from '@/lib/types';
+
+const AXIS_HEIGHT = 28;
+const AXIS_COLOR = '#525252';
+const AXIS_TICK_COLOR = '#737373';
 
 interface Props {
   narratives: Narrative[];
@@ -38,9 +44,17 @@ function StreamgraphInner({
   const { rows, ids, dateRange, maxTotal } = useMemo(() => buildRows(series), [series]);
   const tooltip = useTooltip<{ narrativeId: string; date: Date; score: number }>();
 
+  const chartHeight = Math.max(0, height - AXIS_HEIGHT);
   const xScale = scaleTime({ domain: dateRange, range: [0, width] });
   const halfExtent = Math.max(1, maxTotal / 2);
-  const yScale = scaleLinear({ domain: [-halfExtent, halfExtent], range: [height, 0] });
+  const yScale = scaleLinear({ domain: [-halfExtent, halfExtent], range: [chartHeight, 0] });
+
+  const yearTicks = useMemo(() => {
+    const years = timeYear.range(timeYear.floor(dateRange[0]), timeYear.ceil(dateRange[1]));
+    const maxTicks = Math.max(4, Math.min(12, Math.floor(width / 70)));
+    const step = Math.max(1, Math.ceil(years.length / maxTicks));
+    return years.filter((_, i) => i % step === 0);
+  }, [dateRange, width]);
 
   if (rows.length === 0) {
     return (
@@ -83,6 +97,20 @@ function StreamgraphInner({
           }
         </AreaStack>
       </Group>
+      <AxisBottom
+        top={chartHeight}
+        scale={xScale}
+        tickValues={yearTicks}
+        tickFormat={(d) => String((d as Date).getFullYear())}
+        stroke={AXIS_COLOR}
+        tickStroke={AXIS_COLOR}
+        tickLabelProps={() => ({
+          fill: AXIS_TICK_COLOR,
+          fontSize: 11,
+          textAnchor: 'middle',
+          dy: '0.5em',
+        })}
+      />
       {tooltip.tooltipData && (
         <TooltipWithBounds top={tooltip.tooltipTop ?? 0} left={tooltip.tooltipLeft ?? 0}>
           {tooltip.tooltipData.narrativeId}: {tooltip.tooltipData.score.toFixed(0)}
