@@ -26,8 +26,7 @@ export function CurrentPanel({ narratives, series, onHighlight }: Props) {
       const trend = s ? computeTrend(s.points) : { direction: 'flat' as TrendDirection, deltaPct: null };
       return { narrative: n, score: latest?.score ?? 0, trend };
     })
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 10);
+    .sort((a, b) => b.score - a.score);
 
   return (
     <aside className="w-64 p-4 space-y-2">
