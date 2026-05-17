@@ -46,5 +46,29 @@
     "source": "google-trends",
     "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
     "at": "2026-05-10T08:00:26.705Z"
+  },
+  {
+    "narrativeId": "ico-era",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-05-17T08:12:22.602Z"
+  },
+  {
+    "narrativeId": "defi-summer",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-05-17T08:12:24.715Z"
+  },
+  {
+    "narrativeId": "gamefi",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-05-17T08:12:29.487Z"
+  },
+  {
+    "narrativeId": "stablecoins",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-05-17T08:13:16.738Z"
   }
 ]
