@@ -70,5 +70,23 @@
     "source": "google-trends",
     "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
     "at": "2026-05-17T08:13:16.738Z"
+  },
+  {
+    "narrativeId": "metaverse",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-05-31T08:36:25.185Z"
+  },
+  {
+    "narrativeId": "l2s",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-05-31T08:36:27.338Z"
+  },
+  {
+    "narrativeId": "rwa",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-05-31T08:36:32.129Z"
   }
 ]
