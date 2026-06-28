@@ -88,5 +88,59 @@
     "source": "google-trends",
     "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
     "at": "2026-05-31T08:36:32.129Z"
+  },
+  {
+    "narrativeId": "restaking",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-06-28T08:43:01.791Z"
+  },
+  {
+    "narrativeId": "points",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-06-28T08:43:15.903Z"
+  },
+  {
+    "narrativeId": "cross-chain",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-06-28T08:43:20.389Z"
+  },
+  {
+    "narrativeId": "daos",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-06-28T08:43:22.532Z"
+  },
+  {
+    "narrativeId": "intents",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-06-28T08:43:24.664Z"
+  },
+  {
+    "narrativeId": "account-abstraction",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-06-28T08:43:26.792Z"
+  },
+  {
+    "narrativeId": "yield-tokenization",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-06-28T08:43:28.899Z"
+  },
+  {
+    "narrativeId": "stablecoins",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-06-28T08:43:31.018Z"
+  },
+  {
+    "narrativeId": "web3-social",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-06-28T08:43:33.133Z"
   }
 ]
