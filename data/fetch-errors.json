@@ -142,5 +142,17 @@
     "source": "google-trends",
     "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
     "at": "2026-06-28T08:43:33.133Z"
+  },
+  {
+    "narrativeId": "depin",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-12T08:04:06.652Z"
+  },
+  {
+    "narrativeId": "modular",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-12T08:04:11.190Z"
   }
 ]
