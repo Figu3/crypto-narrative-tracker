@@ -154,5 +154,83 @@
     "source": "google-trends",
     "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
     "at": "2026-07-12T08:04:11.190Z"
+  },
+  {
+    "narrativeId": "metaverse",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:11:41.371Z"
+  },
+  {
+    "narrativeId": "rwa",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:11:49.849Z"
+  },
+  {
+    "narrativeId": "ai-agents",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:00.173Z"
+  },
+  {
+    "narrativeId": "depin",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:02.362Z"
+  },
+  {
+    "narrativeId": "prediction-markets",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:04.540Z"
+  },
+  {
+    "narrativeId": "modular",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:06.714Z"
+  },
+  {
+    "narrativeId": "perp-dexs",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:08.902Z"
+  },
+  {
+    "narrativeId": "points",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:11.017Z"
+  },
+  {
+    "narrativeId": "zk",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:13.166Z"
+  },
+  {
+    "narrativeId": "cross-chain",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:15.288Z"
+  },
+  {
+    "narrativeId": "daos",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:17.404Z"
+  },
+  {
+    "narrativeId": "stablecoins",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:27.611Z"
+  },
+  {
+    "narrativeId": "web3-social",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-07-26T08:12:29.731Z"
   }
 ]
