@@ -322,5 +322,41 @@
     "source": "google-trends",
     "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
     "at": "2026-09-06T10:00:06.714Z"
+  },
+  {
+    "narrativeId": "modular",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-09-13T10:52:29.667Z"
+  },
+  {
+    "narrativeId": "perp-dexs",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-09-13T10:52:31.883Z"
+  },
+  {
+    "narrativeId": "points",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-09-13T10:52:34.129Z"
+  },
+  {
+    "narrativeId": "zk",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-09-13T10:52:36.485Z"
+  },
+  {
+    "narrativeId": "cross-chain",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-09-13T10:52:38.713Z"
+  },
+  {
+    "narrativeId": "account-abstraction",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-09-13T10:52:46.080Z"
   }
 ]
