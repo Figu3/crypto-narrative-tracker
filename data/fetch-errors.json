@@ -376,5 +376,23 @@
     "source": "google-trends",
     "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
     "at": "2026-09-27T11:07:15.617Z"
+  },
+  {
+    "narrativeId": "prediction-markets",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-10-25T10:28:34.507Z"
+  },
+  {
+    "narrativeId": "modular",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-10-25T10:28:36.682Z"
+  },
+  {
+    "narrativeId": "points",
+    "source": "google-trends",
+    "message": "SyntaxError: Unexpected token '<', \"<html lang\"... is not valid JSON",
+    "at": "2026-10-25T10:28:41.515Z"
   }
 ]
